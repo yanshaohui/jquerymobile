@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+<meta content=”width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;” name=”viewport” /> 
+<meta content=”yes” name=”apple-mobile-web-app-capable” /> 
+<meta content=”black” name=”apple-mobile-web-app-status-bar-style” /> 
+<meta content=”telephone=no” name=”format-detection” />
+<meta content=”email=no” name=”format-detection” />
+<!--
+第一个meta标签表示：强制让文档的宽度与设备的宽度保持1:1，并且文档最大的宽度比例是1.0，且不允许用户点击屏幕放大浏览；
+第二个meta标签是iphone设备中的safari私有meta标签，它表示：允许全屏模式浏览；
+第三个meta标签也是iphone的私有标签，它指定的iphone中safari顶端的状态条的样式；
+第四个meta标签表示：告诉ios设备忽略将页面中的数字识别为电话号码。
+第五个meta标签，如果你不想Android自动识别页面中的邮件地址
+ -->
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+</head>
+<body>
+<!-- Home -->
+<div data-role="page" id="page1">
+    <div data-theme="a" data-role="header">
+        <h3>
+            严少辉
+        </h3>
+    </div>
+    <div data-role="content">
+        <div data-role="navbar" data-iconpos="left">
+            <ul>
+                <li>
+                    <a href="#page1" data-transition="fade" data-theme="" data-icon="">
+                        高
+                    </a>
+                </li>
+                <li>
+                    <a href="#page1" data-transition="fade" data-theme="" data-icon="">
+                        富
+                    </a>
+                </li>
+                <li>
+                    <a href="#page1" data-transition="fade" data-theme="" data-icon="" class="ui-btn-active ui-state-persist">
+                        帅
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <ul data-role="listview" data-divider-theme="b" data-inset="true">
+            <li data-role="list-divider" role="heading">
+                Divider
+            </li>
+            <li data-theme="c">
+                <a href="#" data-transition="slide">
+                    Button
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="#page1" data-transition="slide">
+                    Button
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="#page1" data-transition="slide">
+                    Button
+                </a>
+            </li>
+        </ul>
+        <div data-role="fieldcontain">
+            <label for="textinput1">
+                标题没有
+            </label>
+            <input name="" id="textinput1" placeholder="" value="" type="text">
+        </div>
+        <div id="checkboxes1" data-role="fieldcontain">
+            <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+                <legend>
+                    Choose:
+                </legend>
+                <input id="checkbox1" name="" type="checkbox">
+                <label for="checkbox1">
+                    Checkbox
+                </label>
+                <input id="checkbox2" name="" data-theme="c" type="checkbox">
+                <label for="checkbox2">
+                    Checkbox
+                </label>
+                <input id="checkbox3" name="" data-theme="c" type="checkbox">
+                <label for="checkbox3">
+                    Checkbox
+                </label>
+            </fieldset>
+        </div>
+        <div data-role="fieldcontain">
+            <fieldset data-role="controlgroup" data-type="vertical">
+                <legend>
+                    Choose:
+                </legend>
+                <input id="radio1" name="" value="" data-theme="c" type="radio">
+                <label for="radio1">
+                    Option
+                </label>
+                <input id="radio2" name="" value="radio2" data-theme="c" type="radio">
+                <label for="radio2">
+                    Option
+                </label>
+                <input id="radio3" name="" value="radio3" data-theme="c" type="radio">
+                <label for="radio3">
+                    Option
+                </label>
+            </fieldset>
+        </div>
+        <div data-role="fieldcontain">
+            <label for="slider1">
+                Value
+            </label>
+            <input id="slider1" type="range" name="slider" value="50" min="0" max="100"
+            data-highlight="false">
+        </div>
+        <div data-role="fieldcontain">
+            <select name="toggleswitch1" id="toggleswitch1" data-theme="" data-role="slider">
+                <option value="off">
+                    Off
+                </option>
+                <option value="on">
+                    On
+                </option>
+            </select>
+        </div>
+        <div data-role="fieldcontain">
+            <label for="selectmenu1">
+                Choose:
+            </label>
+            <select id="selectmenu1" name="">
+                <option value="option1">
+                    Option 1
+                </option>
+                <option value="value">
+                    Option
+                </option>
+                <option value="value">
+                    Option
+                </option>
+                <option value="value">
+                    Option
+                </option>
+            </select>
+        </div>
+        <input type="submit" value="Submit">
+        <div style="">
+            <img style="width: 100%; height: 100px" src="image/1.gif">
+        </div>
+        <div style="">
+            <img style="width: 100%; height: 100px" src="image/2.png">
+        </div>
+        <div style="">
+            <img style="width: 100%; height: 100px" src="image/3.jpg">
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <h3>
+            严少辉万岁
+        </h3>
+    </div>
+</div>
+
+</body>
+</html>
